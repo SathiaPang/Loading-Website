@@ -16,8 +16,9 @@
 
     <nav>
         <div class="logo-container">
-            <span class="logo-dot"></span>
-            <span class="logo-text">LOADING</span>
+            <!-- <span class="logo-dot"></span>
+            <span class="logo-text">LOADING</span> -->
+            <img src="./img/loading-logo.svg" alt="">
         </div>
         <ul class="nav-links">
             <li><a href="#work">Work</a></li>
@@ -39,9 +40,29 @@
         </div>
 
         <div class="hero-visuals">
-            <div class="shape shape-circle"></div>
-            <div class="shape shape-triangle"></div>
-            <div class="shape shape-square"></div>
+            <!-- Orbital rings for that tech feel -->
+            <div class="orbital-system">
+                <div class="orbital-ring"></div>
+                <div class="orbital-ring"></div>
+                <div class="orbital-ring"></div>
+            </div>
+
+            <!-- Connector lines -->
+            <div class="connector-line line-1"></div>
+            <div class="connector-line line-2"></div>
+            <div class="connector-line line-3"></div>
+
+            <!-- Main shapes with parallax -->
+            <div class="shape shape-circle" data-speed="0.05"></div>
+            <div class="shape shape-triangle" data-speed="0.08"></div>
+            <div class="shape shape-square" data-speed="0.03"></div>
+
+            <!-- Accent dots for depth -->
+            <div class="shape-dot dot-1"></div>
+            <div class="shape-dot dot-2"></div>
+            <div class="shape-dot dot-3"></div>
+            <div class="shape-dot dot-4"></div>
+            <div class="shape-dot dot-5"></div>
         </div>
     </header>
 
@@ -127,6 +148,71 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Interactive Parallax Effect
+        // Shapes follow mouse cursor with different speeds for depth
+        document.addEventListener('DOMContentLoaded', () => {
+            const heroVisuals = document.querySelector('.hero-visuals');
+            const shapes = document.querySelectorAll('.shape[data-speed]');
+            const dots = document.querySelectorAll('.shape-dot');
+
+            if (!heroVisuals) return;
+
+            let mouseX = 0;
+            let mouseY = 0;
+            let currentX = 0;
+            let currentY = 0;
+
+            // Get hero section bounds
+            const hero = document.querySelector('.hero');
+
+            hero.addEventListener('mousemove', (e) => {
+                const rect = hero.getBoundingClientRect();
+                // Calculate mouse position relative to center of hero
+                mouseX = (e.clientX - rect.left - rect.width / 2) / rect.width;
+                mouseY = (e.clientY - rect.top - rect.height / 2) / rect.height;
+            });
+
+            // Smooth animation loop
+            function animate() {
+                // Ease towards target position
+                currentX += (mouseX - currentX) * 0.08;
+                currentY += (mouseY - currentY) * 0.08;
+
+                // Apply parallax to main shapes
+                shapes.forEach(shape => {
+                    const speed = parseFloat(shape.dataset.speed) * 100;
+                    const x = currentX * speed;
+                    const y = currentY * speed;
+                    shape.style.transform = `translate(${x}px, ${y}px)`;
+                });
+
+                // Apply subtle parallax to dots (opposite direction for depth)
+                dots.forEach((dot, i) => {
+                    const speed = 15 + (i * 5);
+                    const x = -currentX * speed;
+                    const y = -currentY * speed;
+                    dot.style.transform = `translate(${x}px, ${y}px)`;
+                });
+
+                requestAnimationFrame(animate);
+            }
+
+            animate();
+
+            // Add magnetic effect on shape hover
+            shapes.forEach(shape => {
+                shape.addEventListener('mouseenter', () => {
+                    shape.style.transition = 'transform 0.3s ease-out, box-shadow 0.3s ease';
+                });
+
+                shape.addEventListener('mouseleave', () => {
+                    shape.style.transition = 'transform 0.15s ease-out';
+                });
+            });
+        });
+    </script>
 
 </body>
 
