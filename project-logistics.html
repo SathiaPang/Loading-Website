@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Logistics | LOADING</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-content">
+            <div class="loader-dot"></div>
+            <span class="loader-text">LOADING</span>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="logo-container">
+            <a href="./index.html" class="logo-link">
+                <img src="./img/loading-logo.svg" alt="LOADING Logo">
+            </a>
+        </div>
+
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="./index.html#work">Work</a></li>
+            <li><a href="./index.html#services">Services</a></li>
+            <li><a href="./about.html">About</a></li>
+        </ul>
+        <a href="./index.html#contact" class="cta-btn">Let's Talk</a>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="./index.html#work">Work</a></li>
+            <li><a href="./index.html#services">Services</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./index.html#contact" class="mobile-cta">Let's Talk</a></li>
+        </ul>
+    </div>
+
+    <!-- Project Hero -->
+    <header class="project-hero">
+        <div class="project-hero-content">
+            <a href="./index.html#work" class="back-link">← Back to Work</a>
+            <span class="project-tag tag-red">AI / ML</span>
+            <h1>Smart Logistics</h1>
+            <p class="project-subtitle">AI-powered routing system that optimizes delivery networks in real-time — saving
+                fuel, time, and operational costs.</p>
+
+            <div class="project-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Client</span>
+                    <span class="meta-value">TransitFlow</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Timeline</span>
+                    <span class="meta-value">8 Months</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Role</span>
+                    <span class="meta-value">AI/ML & Systems Architecture</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-hero-visual">
+            <div class="project-mockup logistics-mockup"></div>
+        </div>
+    </header>
+
+    <!-- Project Overview -->
+    <section class="project-section">
+        <div class="section-header">
+            <h2>Overview</h2>
+            <div class="section-line red-line"></div>
+        </div>
+        <div class="project-content">
+            <p class="lead-text">TransitFlow operates a fleet of 2,000+ delivery vehicles across 15 cities. Their manual
+                routing process was inefficient, leading to wasted fuel, late deliveries, and frustrated customers.</p>
+            <p>We built an intelligent logistics platform that uses machine learning to optimize routes in real-time,
+                predict delivery windows, and adapt to changing conditions like traffic, weather, and driver
+                availability.</p>
+        </div>
+    </section>
+
+    <!-- The Challenge -->
+    <section class="project-section bg-off-white">
+        <div class="section-header">
+            <h2>The Challenge</h2>
+            <div class="section-line blue-line"></div>
+        </div>
+        <div class="challenge-grid">
+            <div class="challenge-card">
+                <div class="challenge-number">01</div>
+                <h3>Dynamic Variables</h3>
+                <p>Routes change constantly — new orders come in, traffic conditions shift, drivers call in sick. Static
+                    planning doesn't work.</p>
+            </div>
+            <div class="challenge-card">
+                <div class="challenge-number">02</div>
+                <h3>Scale</h3>
+                <p>50,000+ deliveries per day across 2,000 vehicles. The optimization problem is computationally
+                    massive.</p>
+            </div>
+            <div class="challenge-card">
+                <div class="challenge-number">03</div>
+                <h3>Delivery Windows</h3>
+                <p>Customers expect accurate ETAs. A 2-hour delivery window isn't good enough anymore.</p>
+            </div>
+            <div class="challenge-card">
+                <div class="challenge-number">04</div>
+                <h3>Cost Pressure</h3>
+                <p>Fuel costs are rising. Every unnecessary kilometer costs money and increases carbon footprint.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Approach -->
+    <section class="project-section">
+        <div class="section-header">
+            <h2>Our Approach</h2>
+            <div class="section-line yellow-line"></div>
+        </div>
+        <div class="approach-timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker marker-red"></div>
+                <div class="timeline-content">
+                    <h3>Data Collection & Analysis</h3>
+                    <span class="timeline-duration">Week 1-4</span>
+                    <p>Analyzed 2 years of historical delivery data — routes, times, fuel consumption, traffic patterns,
+                        and customer feedback.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker marker-red"></div>
+                <div class="timeline-content">
+                    <h3>ML Model Development</h3>
+                    <span class="timeline-duration">Week 5-12</span>
+                    <p>Built predictive models for delivery time estimation, traffic forecasting, and demand prediction
+                        using gradient boosting and neural networks.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker marker-red"></div>
+                <div class="timeline-content">
+                    <h3>Optimization Engine</h3>
+                    <span class="timeline-duration">Week 13-20</span>
+                    <p>Developed a constraint-based optimization system that considers vehicle capacity, driver hours,
+                        delivery windows, and real-time traffic.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker marker-red"></div>
+                <div class="timeline-content">
+                    <h3>Real-Time Integration</h3>
+                    <span class="timeline-duration">Week 21-28</span>
+                    <p>Connected with GPS systems, traffic APIs, and order management to enable dynamic re-routing as
+                        conditions change.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker marker-red"></div>
+                <div class="timeline-content">
+                    <h3>Pilot & Rollout</h3>
+                    <span class="timeline-duration">Week 29-32</span>
+                    <p>Started with one city, measured results, fine-tuned models, then rolled out to all 15 cities over
+                        4 weeks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="project-section bg-off-white">
+        <div class="section-header">
+            <h2>Key Features</h2>
+            <div class="section-line red-line"></div>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon red-bg"></div>
+                <h3>Dynamic Routing</h3>
+                <p>Routes recalculate every 5 minutes based on real-time traffic, new orders, and changing conditions.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon blue-bg"></div>
+                <h3>Predictive ETAs</h3>
+                <p>Machine learning models predict delivery times with 95% accuracy within a 15-minute window.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon yellow-bg"></div>
+                <h3>Fleet Dashboard</h3>
+                <p>Real-time visibility into every vehicle — location, status, next stops, and performance metrics.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon red-bg"></div>
+                <h3>Driver App</h3>
+                <p>Turn-by-turn navigation, proof of delivery, customer communication, and performance gamification.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon blue-bg"></div>
+                <h3>Demand Forecasting</h3>
+                <p>Predict order volumes by area and time to pre-position vehicles and staff appropriately.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon yellow-bg"></div>
+                <h3>Carbon Tracking</h3>
+                <p>Monitor and report CO2 emissions with optimization targets for sustainability goals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="project-section">
+        <div class="section-header">
+            <h2>Tech Stack</h2>
+            <div class="section-line blue-line"></div>
+        </div>
+        <div class="tech-stack">
+            <div class="tech-category">
+                <h3>AI / ML</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">TensorFlow</span>
+                    <span class="tech-tag">XGBoost</span>
+                    <span class="tech-tag">OR-Tools</span>
+                    <span class="tech-tag">scikit-learn</span>
+                </div>
+            </div>
+            <div class="tech-category">
+                <h3>Backend</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">Go</span>
+                    <span class="tech-tag">gRPC</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Apache Kafka</span>
+                    <span class="tech-tag">Redis</span>
+                </div>
+            </div>
+            <div class="tech-category">
+                <h3>Infrastructure</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">GCP</span>
+                    <span class="tech-tag">Kubernetes</span>
+                    <span class="tech-tag">BigQuery</span>
+                    <span class="tech-tag">Pub/Sub</span>
+                    <span class="tech-tag">Maps API</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section class="project-section results-section">
+        <div class="section-header">
+            <h2>The Results</h2>
+            <div class="section-line red-line"></div>
+        </div>
+        <div class="results-grid">
+            <div class="result-card">
+                <span class="result-number">23%</span>
+                <span class="result-label">Fuel Savings</span>
+            </div>
+            <div class="result-card">
+                <span class="result-number">+18%</span>
+                <span class="result-label">Deliveries Per Driver</span>
+            </div>
+            <div class="result-card">
+                <span class="result-number">95%</span>
+                <span class="result-label">On-Time Delivery</span>
+            </div>
+            <div class="result-card">
+                <span class="result-number">-40%</span>
+                <span class="result-label">Customer Complaints</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Project -->
+    <section class="next-project">
+        <span class="next-label">Next Project</span>
+        <a href="./project-ecommerce.html" class="next-project-link">
+            <h2>E-Commerce Platform →</h2>
+        </a>
+    </section>
+
+    <footer id="about">
+        <div class="footer-content">
+            <h2>Ready to start?</h2>
+            <p>Let's load the future together.</p>
+            <a href="mailto:hello@loading.team" class="big-contact-link">hello@loading.team</a>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 LOADING Team. All rights reserved.</p>
+                <div class="socials">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Page Loader
+        window.addEventListener('load', () => {
+            const loader = document.querySelector('.page-loader');
+            setTimeout(() => {
+                loader.classList.add('loaded');
+            }, 1500);
+        });
+
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const body = document.body;
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            body.classList.toggle('menu-open');
+        });
+
+        // Close menu when clicking a link
+        const mobileLinks = document.querySelectorAll('.mobile-nav-links a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                body.classList.remove('menu-open');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tracker | LOADING</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-content">
+            <div class="loader-dot"></div>
+            <span class="loader-text">LOADING</span>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="logo-container">
+            <a href="./index.html" class="logo-link">
+                <img src="./img/loading-logo.svg" alt="LOADING Logo">
+            </a>
+        </div>
+
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="./index.html#work">Work</a></li>
+            <li><a href="./index.html#services">Services</a></li>
+            <li><a href="./about.html">About</a></li>
+        </ul>
+        <a href="./index.html#contact" class="cta-btn">Let's Talk</a>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="./index.html#work">Work</a></li>
+            <li><a href="./index.html#services">Services</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./index.html#contact" class="mobile-cta">Let's Talk</a></li>
+        </ul>
+    </div>
+
+    <!-- Project Hero -->
+    <header class="project-hero project-hero-gradient">
+        <div class="project-hero-content">
+            <a href="./index.html#work" class="back-link">← Back to Work</a>
+            <span class="project-tag tag-yellow">Mobile</span>
+            <h1>Health Tracker</h1>
+            <p class="project-subtitle">A comprehensive mobile app helping users take control of their wellness journey
+                — from daily habits to long-term health goals.</p>
+
+            <div class="project-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Client</span>
+                    <span class="meta-value">WellLife Inc.</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Timeline</span>
+                    <span class="meta-value">5 Months</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Role</span>
+                    <span class="meta-value">Mobile Development & UI/UX</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-hero-visual">
+            <div class="project-mockup health-mockup"></div>
+        </div>
+    </header>
+
+    <!-- Project Overview -->
+    <section class="project-section">
+        <div class="section-header">
+            <h2>Overview</h2>
+            <div class="section-line yellow-line"></div>
+        </div>
+        <div class="project-content">
+            <p class="lead-text">WellLife wanted to create more than just another fitness app. They envisioned a
+                holistic health companion that tracks nutrition, exercise, sleep, mental wellness, and medical data —
+                all in one beautiful, easy-to-use interface.</p>
+            <p>We built a cross-platform mobile app that syncs with wearables, integrates with healthcare providers, and
+                uses smart algorithms to provide personalized health insights and recommendations.</p>
+        </div>
+    </section>
+
+    <!-- The Challenge -->
+    <section class="project-section bg-off-white">
+        <div class="section-header">
+            <h2>The Challenge</h2>
+            <div class="section-line red-line"></div>
+        </div>
+        <div class="challenge-grid">
+            <div class="challenge-card">
+                <div class="challenge-number">01</div>
+                <h3>Data Privacy</h3>
+                <p>Health data is sensitive. We needed HIPAA-compliant architecture with end-to-end encryption and
+                    user-controlled data sharing.</p>
+            </div>
+            <div class="challenge-card">
+                <div class="challenge-number">02</div>
+                <h3>Device Integration</h3>
+                <p>Supporting Apple Watch, Fitbit, Garmin, and dozens of other wearables with different APIs and data
+                    formats.</p>
+            </div>
+            <div class="challenge-card">
+                <div class="challenge-number">03</div>
+                <h3>User Engagement</h3>
+                <p>Most health apps are abandoned within a week. We needed to create habits, not just features.</p>
+            </div>
+            <div class="challenge-card">
+                <div class="challenge-number">04</div>
+                <h3>Personalization</h3>
+                <p>Health is personal. A 25-year-old athlete has different needs than a 60-year-old managing diabetes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Approach -->
+    <section class="project-section">
+        <div class="section-header">
+            <h2>Our Approach</h2>
+            <div class="section-line blue-line"></div>
+        </div>
+        <div class="approach-timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker marker-yellow"></div>
+                <div class="timeline-content">
+                    <h3>User Research</h3>
+                    <span class="timeline-duration">Week 1-3</span>
+                    <p>Interviewed 50+ potential users across different age groups, health conditions, and fitness
+                        levels. Mapped their daily routines and pain points.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker marker-yellow"></div>
+                <div class="timeline-content">
+                    <h3>UX Design</h3>
+                    <span class="timeline-duration">Week 4-7</span>
+                    <p>Designed an intuitive interface that surfaces the right information at the right time. Morning
+                        shows sleep quality, evening prompts for gratitude journaling.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker marker-yellow"></div>
+                <div class="timeline-content">
+                    <h3>Core App Development</h3>
+                    <span class="timeline-duration">Week 8-14</span>
+                    <p>Built with React Native for cross-platform efficiency. Native modules for HealthKit and Google
+                        Fit integration.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker marker-yellow"></div>
+                <div class="timeline-content">
+                    <h3>AI & Personalization</h3>
+                    <span class="timeline-duration">Week 15-18</span>
+                    <p>Developed machine learning models that analyze user patterns and provide personalized
+                        recommendations, meal suggestions, and workout plans.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker marker-yellow"></div>
+                <div class="timeline-content">
+                    <h3>Beta Testing & Launch</h3>
+                    <span class="timeline-duration">Week 19-20</span>
+                    <p>500-user beta program to gather feedback, fix bugs, and optimize onboarding flow before public
+                        launch.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="project-section bg-off-white">
+        <div class="section-header">
+            <h2>Key Features</h2>
+            <div class="section-line yellow-line"></div>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon yellow-bg"></div>
+                <h3>Smart Dashboard</h3>
+                <p>Context-aware home screen that adapts throughout the day. Morning shows sleep data, afternoon shows
+                    activity progress.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon red-bg"></div>
+                <h3>Nutrition Tracking</h3>
+                <p>Barcode scanning, photo recognition for meals, and a database of 500,000+ foods with detailed macro
+                    and micronutrients.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon blue-bg"></div>
+                <h3>Workout Library</h3>
+                <p>300+ guided workouts from yoga to HIIT, with video demonstrations and adaptive difficulty based on
+                    fitness level.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon yellow-bg"></div>
+                <h3>Sleep Analysis</h3>
+                <p>Deep sleep tracking with smart alarm that wakes you during light sleep phases for better mornings.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon red-bg"></div>
+                <h3>Mental Wellness</h3>
+                <p>Guided meditations, breathing exercises, mood tracking, and gratitude journaling for holistic health.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon blue-bg"></div>
+                <h3>Health Records</h3>
+                <p>Store and share medical records, track medications, and sync with healthcare provider portals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="project-section">
+        <div class="section-header">
+            <h2>Tech Stack</h2>
+            <div class="section-line red-line"></div>
+        </div>
+        <div class="tech-stack">
+            <div class="tech-category">
+                <h3>Mobile</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">React Native</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Redux</span>
+                    <span class="tech-tag">HealthKit</span>
+                    <span class="tech-tag">Google Fit</span>
+                </div>
+            </div>
+            <div class="tech-category">
+                <h3>Backend</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">NestJS</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">TensorFlow</span>
+                    <span class="tech-tag">FHIR API</span>
+                </div>
+            </div>
+            <div class="tech-category">
+                <h3>Infrastructure</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">AWS</span>
+                    <span class="tech-tag">HIPAA Compliant</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">CloudWatch</span>
+                    <span class="tech-tag">S3</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section class="project-section results-section results-gradient">
+        <div class="section-header">
+            <h2>The Results</h2>
+            <div class="section-line yellow-line"></div>
+        </div>
+        <div class="results-grid">
+            <div class="result-card">
+                <span class="result-number">250K+</span>
+                <span class="result-label">Downloads</span>
+            </div>
+            <div class="result-card">
+                <span class="result-number">4.8★</span>
+                <span class="result-label">App Store Rating</span>
+            </div>
+            <div class="result-card">
+                <span class="result-number">68%</span>
+                <span class="result-label">30-Day Retention</span>
+            </div>
+            <div class="result-card">
+                <span class="result-number">15min</span>
+                <span class="result-label">Avg. Daily Usage</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Project -->
+    <section class="next-project">
+        <span class="next-label">Next Project</span>
+        <a href="./project-logistics.html" class="next-project-link">
+            <h2>Smart Logistics →</h2>
+        </a>
+    </section>
+
+    <footer id="about">
+        <div class="footer-content">
+            <h2>Ready to start?</h2>
+            <p>Let's load the future together.</p>
+            <a href="mailto:hello@loading.team" class="big-contact-link">hello@loading.team</a>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 LOADING Team. All rights reserved.</p>
+                <div class="socials">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Page Loader
+        window.addEventListener('load', () => {
+            const loader = document.querySelector('.page-loader');
+            setTimeout(() => {
+                loader.classList.add('loaded');
+            }, 1500);
+        });
+
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const body = document.body;
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            body.classList.toggle('menu-open');
+        });
+
+        // Close menu when clicking a link
+        const mobileLinks = document.querySelectorAll('.mobile-nav-links a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                body.classList.remove('menu-open');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

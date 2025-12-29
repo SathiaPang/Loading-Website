@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinTech Dashboard | LOADING</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-content">
+            <div class="loader-dot"></div>
+            <span class="loader-text">LOADING</span>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="logo-container">
+            <a href="./index.html" class="logo-link">
+                <img src="./img/loading-logo.svg" alt="LOADING Logo">
+            </a>
+        </div>
+
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="./index.html#work">Work</a></li>
+            <li><a href="./index.html#services">Services</a></li>
+            <li><a href="./about.html">About</a></li>
+        </ul>
+        <a href="./index.html#contact" class="cta-btn">Let's Talk</a>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="./index.html#work">Work</a></li>
+            <li><a href="./index.html#services">Services</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./index.html#contact" class="mobile-cta">Let's Talk</a></li>
+        </ul>
+    </div>
+
+    <!-- Project Hero -->
+    <header class="project-hero project-hero-dark">
+        <div class="project-hero-content">
+            <a href="./index.html#work" class="back-link">← Back to Work</a>
+            <span class="project-tag tag-blue">Data Science</span>
+            <h1>FinTech Dashboard</h1>
+            <p class="project-subtitle">Real-time data visualization for investment professionals — making complex
+                financial data actionable at a glance.</p>
+
+            <div class="project-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Client</span>
+                    <span class="meta-value">Capital Insights</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Timeline</span>
+                    <span class="meta-value">4 Months</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Role</span>
+                    <span class="meta-value">Data Visualization & Frontend</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-hero-visual">
+            <div class="project-mockup fintech-mockup"></div>
+        </div>
+    </header>
+
+    <!-- Project Overview -->
+    <section class="project-section">
+        <div class="section-header">
+            <h2>Overview</h2>
+            <div class="section-line blue-line"></div>
+        </div>
+        <div class="project-content">
+            <p class="lead-text">Capital Insights manages over $2 billion in assets. Their analysts were drowning in
+                spreadsheets and switching between 6 different tools just to get a complete picture of their portfolio
+                performance.</p>
+            <p>We built a unified dashboard that pulls data from multiple sources, processes it in real-time, and
+                presents actionable insights through beautiful, interactive visualizations.</p>
+        </div>
+    </section>
+
+    <!-- The Challenge -->
+    <section class="project-section bg-off-white">
+        <div class="section-header">
+            <h2>The Challenge</h2>
+            <div class="section-line red-line"></div>
+        </div>
+        <div class="challenge-grid">
+            <div class="challenge-card">
+                <div class="challenge-number">01</div>
+                <h3>Data Fragmentation</h3>
+                <p>Portfolio data scattered across Bloomberg terminals, internal databases, Excel files, and third-party
+                    APIs.</p>
+            </div>
+            <div class="challenge-card">
+                <div class="challenge-number">02</div>
+                <h3>Real-Time Requirements</h3>
+                <p>Market data needs to update in milliseconds. Any delay could mean missed opportunities or increased
+                    risk.</p>
+            </div>
+            <div class="challenge-card">
+                <div class="challenge-number">03</div>
+                <h3>Complex Calculations</h3>
+                <p>Risk metrics, portfolio attribution, and performance analytics require heavy computational
+                    processing.</p>
+            </div>
+            <div class="challenge-card">
+                <div class="challenge-number">04</div>
+                <h3>User Diversity</h3>
+                <p>From senior portfolio managers to junior analysts — each with different needs and technical comfort
+                    levels.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Approach -->
+    <section class="project-section">
+        <div class="section-header">
+            <h2>Our Approach</h2>
+            <div class="section-line yellow-line"></div>
+        </div>
+        <div class="approach-timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker marker-blue"></div>
+                <div class="timeline-content">
+                    <h3>Data Architecture</h3>
+                    <span class="timeline-duration">Week 1-3</span>
+                    <p>Designed a data pipeline that ingests from 12 different sources, normalizes the data, and stores
+                        it in a time-series optimized database.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker marker-blue"></div>
+                <div class="timeline-content">
+                    <h3>User Research</h3>
+                    <span class="timeline-duration">Week 2-4</span>
+                    <p>Shadowed analysts during their daily workflows to understand exactly what data they need, when
+                        they need it, and how they make decisions.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker marker-blue"></div>
+                <div class="timeline-content">
+                    <h3>Visualization Design</h3>
+                    <span class="timeline-duration">Week 5-8</span>
+                    <p>Created custom chart components optimized for financial data — candlesticks, heat maps,
+                        correlation matrices, and risk dashboards.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker marker-blue"></div>
+                <div class="timeline-content">
+                    <h3>Real-Time Engine</h3>
+                    <span class="timeline-duration">Week 9-14</span>
+                    <p>Built WebSocket connections for live market data, implemented efficient state management, and
+                        optimized rendering for 60fps animations.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker marker-blue"></div>
+                <div class="timeline-content">
+                    <h3>Security & Compliance</h3>
+                    <span class="timeline-duration">Week 15-16</span>
+                    <p>Implemented role-based access control, audit logging, and ensured compliance with financial
+                        industry regulations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="project-section bg-off-white">
+        <div class="section-header">
+            <h2>Key Features</h2>
+            <div class="section-line blue-line"></div>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon blue-bg"></div>
+                <h3>Live Market Feed</h3>
+                <p>Real-time price updates with sub-second latency. Custom alerts for price movements and volume spikes.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon red-bg"></div>
+                <h3>Risk Analytics</h3>
+                <p>VaR calculations, stress testing scenarios, and exposure breakdowns updated in real-time.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon yellow-bg"></div>
+                <h3>Custom Dashboards</h3>
+                <p>Drag-and-drop widget system lets each user build their perfect workspace with the metrics that
+                    matter.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon blue-bg"></div>
+                <h3>Performance Attribution</h3>
+                <p>Break down returns by sector, geography, and individual holdings to understand what's driving
+                    performance.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon red-bg"></div>
+                <h3>Collaborative Notes</h3>
+                <p>Annotate charts, share insights with team members, and build an institutional knowledge base.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon yellow-bg"></div>
+                <h3>Export & Reports</h3>
+                <p>One-click generation of client reports, regulatory filings, and custom PDF exports.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="project-section">
+        <div class="section-header">
+            <h2>Tech Stack</h2>
+            <div class="section-line red-line"></div>
+        </div>
+        <div class="tech-stack">
+            <div class="tech-category">
+                <h3>Frontend</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">D3.js</span>
+                    <span class="tech-tag">Recharts</span>
+                    <span class="tech-tag">WebSockets</span>
+                </div>
+            </div>
+            <div class="tech-category">
+                <h3>Backend</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">FastAPI</span>
+                    <span class="tech-tag">Pandas</span>
+                    <span class="tech-tag">NumPy</span>
+                    <span class="tech-tag">TimescaleDB</span>
+                </div>
+            </div>
+            <div class="tech-category">
+                <h3>Infrastructure</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">AWS</span>
+                    <span class="tech-tag">Apache Kafka</span>
+                    <span class="tech-tag">Redis</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Terraform</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section class="project-section results-section results-dark">
+        <div class="section-header">
+            <h2>The Results</h2>
+            <div class="section-line blue-line"></div>
+        </div>
+        <div class="results-grid">
+            <div class="result-card">
+                <span class="result-number">85%</span>
+                <span class="result-label">Less Time on Reports</span>
+            </div>
+            <div class="result-card">
+                <span class="result-number">&lt;50ms</span>
+                <span class="result-label">Data Latency</span>
+            </div>
+            <div class="result-card">
+                <span class="result-number">12→1</span>
+                <span class="result-label">Tools Consolidated</span>
+            </div>
+            <div class="result-card">
+                <span class="result-number">+60%</span>
+                <span class="result-label">Analyst Productivity</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Project -->
+    <section class="next-project">
+        <span class="next-label">Next Project</span>
+        <a href="./project-health.html" class="next-project-link">
+            <h2>Health Tracker →</h2>
+        </a>
+    </section>
+
+    <footer id="about">
+        <div class="footer-content">
+            <h2>Ready to start?</h2>
+            <p>Let's load the future together.</p>
+            <a href="mailto:hello@loading.team" class="big-contact-link">hello@loading.team</a>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 LOADING Team. All rights reserved.</p>
+                <div class="socials">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Page Loader
+        window.addEventListener('load', () => {
+            const loader = document.querySelector('.page-loader');
+            setTimeout(() => {
+                loader.classList.add('loaded');
+            }, 1500);
+        });
+
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const body = document.body;
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            body.classList.toggle('menu-open');
+        });
+
+        // Close menu when clicking a link
+        const mobileLinks = document.querySelectorAll('.mobile-nav-links a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                body.classList.remove('menu-open');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
